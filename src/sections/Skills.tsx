@@ -1,41 +1,9 @@
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
+import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { SkillCard } from "@/components/SkillCard";
-import {
-  SiReact,
-  SiNextdotjs,
-  SiTypescript,
-  SiTailwindcss,
-} from "react-icons/si";
+import { backendSkills, frontendSkills, toolsSkills } from "@/Data/skills";
 
 export const Skills: React.FC = () => {
-  const techLogos = [
-    {
-      node: (
-        <div className=" items-center gap-2 text-white">
-          <SiReact color="white" />
-          <p className="text-sm font-medium">React</p>
-        </div>
-      ),
-      title: "React",
-      href: "https://react.dev",
-    },
-    {
-      node: <SiNextdotjs color="white" />,
-      title: "Next.js",
-      href: "https://nextjs.org",
-    },
-    {
-      node: <SiTypescript color="white" />,
-      title: "TypeScript",
-      href: "https://www.typescriptlang.org",
-    },
-    {
-      node: <SiTailwindcss color="white" />,
-      title: "Tailwind CSS",
-      href: "https://tailwindcss.com",
-    },
-  ];
-
   return (
     <section className="w-full px-4 md:px-8 lg:px-16 pt-30">
       <ScrollFloat
@@ -47,14 +15,25 @@ export const Skills: React.FC = () => {
       >
         SKILLS
       </ScrollFloat>
-
+      <ScrollReveal
+        baseOpacity={0.1}
+        enableBlur
+        baseRotation={3}
+        blurStrength={4}
+      >
+        Skilled in building modern, responsive, and scalable web applications
+        using React, Next.js, TypeScript, C#, ASP.NET, and Node.js. Experienced
+        with REST APIs, SQL databases, testing, CI/CD, and Agile development
+        practices to deliver high-quality software.
+      </ScrollReveal>
       <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <div className="flex">
-          <SkillCard logos={techLogos} />
-        </div>
+        <SkillCard logos={frontendSkills} title="Frontend" />
+        <SkillCard logos={backendSkills} title="Backend" />
 
-        <div className="flex">
-          <SkillCard logos={techLogos} />
+        <div className="md:col-span-2 flex justify-center">
+          <div className="w-full md:w-[calc(60%-1rem)]">
+            <SkillCard logos={toolsSkills} title="Tools & DevOps" />
+          </div>
         </div>
       </div>
     </section>
