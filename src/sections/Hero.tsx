@@ -44,7 +44,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Hello There!!
+              Welcome to my portfolio!!
             </ScrollFloat>
           </div>
         </div>
@@ -59,20 +59,6 @@ export const Hero: React.FC = () => {
               stagger={0.05}
             >
               I am Batool Fatima Zaidi.
-            </ScrollFloat>
-          </div>
-        </div>
-
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="w-full max-w-6xl text-center text-white">
-            <ScrollFloat
-              animationDuration={1.2}
-              ease="power3.out"
-              scrollStart="top bottom"
-              scrollEnd="bottom center"
-              stagger={0.05}
-            >
-              Welcome to my portfolio.
             </ScrollFloat>
           </div>
         </div>
