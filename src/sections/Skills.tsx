@@ -1,7 +1,7 @@
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { SkillCard } from "@/components/SkillCard";
-import { backendSkills, frontendSkills, toolsSkills } from "@/Data/skills";
+import { backendSkills, frontendSkills, toolsSkills } from "@/Data/SkillsData";
 
 export const Skills: React.FC = () => {
   return (
