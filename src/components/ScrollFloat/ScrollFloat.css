@@ -16,3 +16,9 @@
   display: inline-block;
   transform-style: preserve-3d;
 }
+.text-skills-small {
+  font-size: clamp(1.6rem, 3vw, 5rem);
+}
+.text-achievement {
+  font-size: clamp(1.2rem, 2.8vw, 4rem);
+}

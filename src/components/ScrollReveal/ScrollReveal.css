@@ -12,3 +12,7 @@
 .word {
   display: inline-block;
 }
+
+.text-skills-xs {
+  font-size: clamp(1.4rem, 2vw, 1rem);
+}
