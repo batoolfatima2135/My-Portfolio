@@ -15,7 +15,7 @@ export const Achievements: React.FC = () => {
       >
         ACHIEVEMENTS
       </ScrollFloat>
-      <div className="w-full px-4 md:px-8 lg:px-12 py-8">
+      <div className="md:w-7/8 sm:w-full px-1 md:px-8 lg:px-12 py-8 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6">
           <div className="my-5">
             <ElectroBorder borderColor="white">
@@ -81,7 +81,7 @@ export const Achievements: React.FC = () => {
                   stagger={0.03}
                   textClassName="text-achievement"
                 >
-                  Future Leadership Program
+                  Leadership Program
                 </ScrollFloat>
               </div>
               <div className="px-5">
@@ -100,7 +100,7 @@ export const Achievements: React.FC = () => {
                   leadership practices.
                 </ScrollReveal>
               </div>
-              <div className="grid grid-cols-1 gap-6 p-5 md:mt-13 sm:mt-5">
+              <div className="grid grid-cols-1 gap-6 p-5 md:mt-12 sm:mt-5">
                 <div className="rounded-2xl overflow-hidden w-7/8 mx-auto">
                   <img
                     src="./future-leadership-program.jpeg"
