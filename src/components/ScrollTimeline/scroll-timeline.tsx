@@ -209,11 +209,11 @@ export const ScrollTimeline = ({
                   transform: "translateX(-50%)",
                   borderRadius: progressLineCap === "round" ? "9999px" : "0px",
                   background: `linear-gradient(
-  to bottom,
-  #00fffc,
-  #f472b6,
-  #00fffc
-)`,
+                                to bottom,
+                                #00fffc,
+                                #f472b6,
+                                #00fffc
+                              )`,
                   // Enhanced shadow for a constant glow effect along the path
                   boxShadow: `
                     0 0 15px rgba(99,102,241,0.5),
