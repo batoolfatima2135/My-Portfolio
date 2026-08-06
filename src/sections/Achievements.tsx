@@ -18,7 +18,7 @@ export const Achievements: React.FC = () => {
       <div className="md:w-7/8 sm:w-full px-1 md:px-8 lg:px-12 py-8 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6">
           <div className="my-5">
-            <ElectroBorder borderColor="white">
+            <ElectroBorder borderColor="#f472b6">
               <div className=" flex items-center gap-4 justify-center p-10">
                 <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-500 text-white shadow-lg">
                   <Trophy className="h-8 w-8" />
