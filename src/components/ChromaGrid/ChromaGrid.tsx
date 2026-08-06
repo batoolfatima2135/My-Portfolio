@@ -8,6 +8,8 @@ export interface ChromaItem {
   category: string;
   quote: string;
   url: string;
+  borderColor: string;
+  gradient: string;
 }
 
 export interface ChromaGridProps {
@@ -109,7 +111,7 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
       onPointerMove={handleMove}
       onPointerLeave={handleLeave}
     >
-      {data.map((c, i) => (
+      {data?.map((c, i) => (
         <article
           key={i}
           className="chroma-card"
@@ -117,22 +119,29 @@ export const ChromaGrid: React.FC<ChromaGridProps> = ({
           onClick={() => handleCardClick(c.url)}
           style={
             {
-              "--card-border": "transparent",
+              "--card-border": c.borderColor || "transparent",
+              "--card-gradient": c.gradient,
               cursor: c.url ? "pointer" : "default",
             } as React.CSSProperties
           }
         >
-          <div key={c.name} className=" p-6 ">
-            <p className="text-xs text-gray-100 mb-3">{c.category}</p>
+          <div key={c.name} className="relative p-6 pt-20">
+            <span
+              style={{
+                background: c.borderColor,
+              }}
+              className="absolute top-8 left-1/2 -translate-x-1/2 z-10 whitespace-nowrap inline-flex items-center rounded-full px-3 py-2 text-xs text-white border border-white/30 backdrop-blur-sm"
+            >
+              {c.category}
+            </span>
 
             <p className="italic text-white leading-7">{c.quote}</p>
 
-            <div className="mt-6 border-t border-white pt-4">
+            <div className="mt-5 border-t border-white pt-4">
               <h3 className="text-white font-semibold">{c.name}</h3>
-
               <p className="text-sm text-gray-200">{c.role}</p>
             </div>
-          </div>{" "}
+          </div>
         </article>
       ))}
       <div className="chroma-overlay" />
