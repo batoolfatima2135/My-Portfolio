@@ -47,7 +47,7 @@ export function ContactForm() {
     overflow-hidden
     rounded-3xl
     border border-white/15
-    bg-white/[0.06]
+    bg-white/6
     p-8
     backdrop-blur-xl
     shadow-[0_20px_80px_rgba(0,0,0,0.45)]
@@ -111,7 +111,7 @@ export function ContactForm() {
                 w-full
                 overflow-hidden
                 rounded-full
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-purple-500
                 via-pink-500
                 to-blue-500

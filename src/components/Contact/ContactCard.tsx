@@ -23,7 +23,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({
         rounded-2xl
         border
         border-white/10
-        bg-white/[0.03]
+        bg-white/3
         p-5
         backdrop-blur-xl
         transition-all
@@ -31,7 +31,7 @@ export const ContactCard: React.FC<ContactCardProps> = ({
         ease-out
         hover:-translate-y-1
         hover:border-white/20
-        hover:bg-white/[0.06]
+        hover:bg-white/6
         hover:shadow-[0_8px_30px_-6px_rgba(0,0,0,0.5)]
       "
     >
@@ -46,8 +46,8 @@ export const ContactCard: React.FC<ContactCardProps> = ({
           transition-opacity
           duration-300
           group-hover:opacity-100
-          bg-gradient-to-br
-          from-white/[0.06]
+          bg-linear-to-br
+          from-white/6
           via-transparent
           to-transparent
         "
