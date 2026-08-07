@@ -44,13 +44,8 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Welcome to my portfolio!!
+              Welcome to my
             </ScrollFloat>
-          </div>
-        </div>
-
-        <div className="min-h-screen flex items-center justify-center">
-          <div className="w-full max-w-6xl text-center text-white">
             <ScrollFloat
               animationDuration={1.2}
               ease="power3.out"
@@ -58,7 +53,53 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              I am Batool Fatima Zaidi.
+              portfolio!!
+            </ScrollFloat>
+          </div>
+        </div>
+
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="block md:hidden">
+            <ScrollFloat
+              animationDuration={1.2}
+              ease="power3.out"
+              scrollStart="top bottom"
+              scrollEnd="bottom center"
+              stagger={0.05}
+            >
+              I am Batool
+            </ScrollFloat>
+
+            <ScrollFloat
+              animationDuration={1.2}
+              ease="power3.out"
+              scrollStart="top bottom"
+              scrollEnd="bottom center"
+              stagger={0.05}
+            >
+              Fatima Zaidi!
+            </ScrollFloat>
+          </div>
+
+          <div className="hidden md:block">
+            <ScrollFloat
+              animationDuration={1.2}
+              ease="power3.out"
+              scrollStart="top bottom"
+              scrollEnd="bottom center"
+              stagger={0.05}
+            >
+              I am Batool Fatima
+            </ScrollFloat>
+
+            <ScrollFloat
+              animationDuration={1.2}
+              ease="power3.out"
+              scrollStart="top bottom"
+              scrollEnd="bottom center"
+              stagger={0.05}
+            >
+              Zaidi!
             </ScrollFloat>
           </div>
         </div>
