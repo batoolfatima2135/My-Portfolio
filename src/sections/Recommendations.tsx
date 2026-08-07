@@ -1,5 +1,6 @@
 import ChromaGrid from "@/components/ChromaGrid/ChromaGrid";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
+import { externalLinks } from "@/Data/ExternalLinks";
 import { recommendations } from "@/Data/Recommendations";
 
 export const Recommendation: React.FC = () => {
@@ -25,7 +26,7 @@ export const Recommendation: React.FC = () => {
       </div>
       <div className="relative flex justify-center my-10">
         <a
-          href="https://www.linkedin.com/in/batoolfatima2135/"
+          href={externalLinks.linkedIn}
           target="_blank"
           rel="noopener noreferrer"
           className="
@@ -35,7 +36,7 @@ export const Recommendation: React.FC = () => {
                 md:px-10           
                 overflow-hidden
                 rounded-full
-                bg-gradient-to-r
+                bg-linear-to-r
                 from-purple-500
                 via-pink-500
                 to-blue-500

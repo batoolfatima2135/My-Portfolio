@@ -30,7 +30,7 @@ export const Achievements: React.FC = () => {
               colors={["#c084fc", "#f472b6", "#38bdf8"]}
             >
               <div className=" flex flex-col md:flex-row items-center gap-4 justify-center p-5 md:p-10">
-                <div className="flex h-10 w-10 md:h-16 md:w-16 items-center justify-center rounded-2xl bg-gradient-to-br from-yellow-400 via-amber-500 to-orange-500 text-white shadow-lg">
+                <div className="flex h-10 w-10 md:h-16 md:w-16 items-center justify-center rounded-2xl bg-linear-to-br from-yellow-400 via-amber-500 to-orange-500 text-white shadow-lg">
                   <Trophy className="h-6  w-6 md:h-8 md:w-8" />
                 </div>
 
