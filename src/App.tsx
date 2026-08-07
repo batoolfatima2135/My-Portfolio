@@ -10,8 +10,14 @@ import { Skills } from "./sections/Skills";
 import { Experience } from "./sections/Experience";
 import { Achievements } from "./sections/Achievements";
 import { Recommendation } from "./sections/Recommendations";
+import Navbar from "./components/Navbar/Navbar";
+import Contact from "./sections/Contact";
 function App() {
   useEffect(() => {
+    const mediaQuery = window.matchMedia("(min-width: 769px)");
+
+    if (!mediaQuery.matches) return;
+
     const lenis = new Lenis();
 
     lenis.on("scroll", ScrollTrigger.update);
@@ -30,6 +36,7 @@ function App() {
   }, []);
   return (
     <>
+      <Navbar />
       <div className="w-full relative">
         <Particles
           particleColors={["#ffffff"]}
@@ -48,6 +55,7 @@ function App() {
         <Experience />
         <Achievements />
         <Recommendation />
+        <Contact />
       </div>
     </>
   );
