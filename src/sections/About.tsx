@@ -4,15 +4,16 @@ import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
 export const About: React.FC = () => {
   return (
-    <section className="min-h-screen">
+    <section className="min-h-screen md:mt-10">
       <ScrollFloat
         animationDuration={1}
         ease="back.inOut(2)"
         scrollStart="center bottom+=50%"
         scrollEnd="bottom bottom-=40%"
         stagger={0.03}
+        textClassName="mb-4"
       >
-        ABOUT
+        About
       </ScrollFloat>
       <section className="relative flex flex-col md:flex-row w-full container ">
         <div className="w-full md:w-1/3  text-white flex justify-center align-middle">
