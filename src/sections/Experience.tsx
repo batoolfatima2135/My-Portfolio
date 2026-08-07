@@ -47,7 +47,7 @@ export const Experience: React.FC = () => {
     },
   ];
   return (
-    <section className="w-full px-4 md:px-8 lg:px-16 pt-30">
+    <section className="w-full px-4 md:px-8 lg:px-16 pt-20 md:pt-50">
       <ScrollFloat
         animationDuration={1}
         ease="back.inOut(2)"
@@ -55,7 +55,7 @@ export const Experience: React.FC = () => {
         scrollEnd="bottom bottom-=40%"
         stagger={0.03}
       >
-        EXPERIENCE
+        Experience
       </ScrollFloat>
       <div>
         <ScrollTimeline
