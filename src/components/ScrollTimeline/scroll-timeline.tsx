@@ -1,5 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
-import { motion, useScroll, useTransform, useSpring } from "framer-motion";
+import {
+  motion,
+  useScroll,
+  useTransform,
+  useSpring,
+  type Variants,
+} from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Card, CardContent } from "./card";
 import { Calendar } from "lucide-react";
@@ -68,6 +74,11 @@ export const ScrollTimeline = ({
   });
 
   const progressHeight = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
+  const yOffset = useTransform(
+    smoothProgress,
+    [0, 1],
+    [parallaxIntensity * 100, -parallaxIntensity * 100],
+  );
 
   useEffect(() => {
     const unsubscribe = scrollYProgress.onChange((v) => {
@@ -83,7 +94,7 @@ export const ScrollTimeline = ({
     return () => unsubscribe();
   }, [scrollYProgress, events.length, activeIndex]);
 
-  const getCardVariants = (index: number) => {
+  const getCardVariants = (index: number): Variants => {
     const baseDelay =
       animationOrder === "simultaneous"
         ? 0
@@ -123,7 +134,6 @@ export const ScrollTimeline = ({
           ease: "easeOut",
         },
       },
-      viewport: { once: false, margin: "-100px" },
     };
   };
 
@@ -259,11 +269,6 @@ export const ScrollTimeline = ({
 
           <div className="relative z-20">
             {events.map((event, index) => {
-              const yOffset = useTransform(
-                smoothProgress,
-                [0, 1],
-                [parallaxIntensity * 100, -parallaxIntensity * 100],
-              );
               return (
                 <div
                   key={event.id || index}
