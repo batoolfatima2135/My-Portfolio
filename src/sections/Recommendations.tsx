@@ -1,14 +1,10 @@
-import BorderGlow from "@/components/BorderGlow/BorderGlow";
 import ChromaGrid from "@/components/ChromaGrid/ChromaGrid";
-import ElectroBorder from "@/components/lightswind/electro-border";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
-import SpecularButton from "@/components/SpecularButton/SpecularButton";
 import { recommendations } from "@/Data/Recommendations";
-import { ArrowRight } from "lucide-react";
 
 export const Recommendation: React.FC = () => {
   return (
-    <section className=" md:mt-15">
+    <section className="mt-10 md:mt-30">
       <ScrollFloat
         animationDuration={1}
         ease="back.inOut(2)"
@@ -18,7 +14,7 @@ export const Recommendation: React.FC = () => {
       >
         Recommendations
       </ScrollFloat>
-      <div className="mt-15">
+      <div className="mt-5 md:mt-15">
         <ChromaGrid
           items={recommendations}
           radius={300}
@@ -27,37 +23,33 @@ export const Recommendation: React.FC = () => {
           ease="power3.out"
         />
       </div>
-      <div className="my-10 ">
-        <SpecularButton
-          size="lg"
-          radius={18}
-          tint="#ffffff"
-          tintOpacity={0}
-          blur={0}
-          textColor="#f5f5f5"
-          lineColor="#EC4899"
-          baseColor="#7C3AED"
-          intensity={1}
-          shineSize={10}
-          shineFade={40}
-          thickness={1}
-          speed={0.35}
-          followMouse
-          proximity={250}
-          className="w-3/4 md:w-fit"
-          autoAnimate
-          onClick={() =>
-            window.open(
-              "https://www.linkedin.com/in/batoolfatima2135/",
-              "_blank",
-            )
-          }
+      <div className="relative flex justify-center my-10">
+        <a
+          href="https://www.linkedin.com/in/batoolfatima2135/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="
+                group
+                relative
+                px-5
+                md:px-10           
+                overflow-hidden
+                rounded-full
+                bg-gradient-to-r
+                from-purple-500
+                via-pink-500
+                to-blue-500
+                py-3.5
+                font-semibold
+                text-white
+                transition
+                duration-300
+                hover:scale-[1.02]
+                disabled:opacity-50
+            "
         >
-          <span className="flex items-center gap-2">
-            View all Recommendations on LinkedIn
-            <ArrowRight size={18} absoluteStrokeWidth={true} />
-          </span>
-        </SpecularButton>
+          View All Recommendations on LinkedIn
+        </a>
       </div>
     </section>
   );
