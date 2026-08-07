@@ -43,14 +43,14 @@ export function ContactForm() {
     <form
       onSubmit={handleSubmit}
       className="
-    relative
-    overflow-hidden
-    rounded-3xl
-    border border-white/15
-    bg-white/6
-    p-8
-    backdrop-blur-xl
-    shadow-[0_20px_80px_rgba(0,0,0,0.45)]
+        relative
+        overflow-hidden
+        rounded-3xl
+        border border-white/15
+        bg-white/6
+        p-8
+        backdrop-blur-xl
+        shadow-[0_20px_80px_rgba(0,0,0,0.45)]
   "
     >
       {/* subtle glow */}
