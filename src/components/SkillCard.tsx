@@ -27,7 +27,7 @@ export const SkillCard = ({ logos, title }: SkillCardProps) => {
           scrollStart="center bottom+=50%"
           scrollEnd="bottom bottom-=40%"
           stagger={0.03}
-          textClassName="text-skills-small"
+          textClassName="text-skills-small mb-4"
         >
           {title}
         </ScrollFloat>
