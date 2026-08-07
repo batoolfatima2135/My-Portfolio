@@ -92,7 +92,7 @@ export const Achievements: React.FC = () => {
               animated
               colors={["#c084fc", "#f472b6", "#38bdf8"]}
             >
-              <div className=" flex items-center  justify-center md:p-10">
+              <div className=" flex pt-5 items-center  justify-center md:p-10">
                 <ScrollFloat
                   animationDuration={1}
                   ease="back.inOut(2)"
