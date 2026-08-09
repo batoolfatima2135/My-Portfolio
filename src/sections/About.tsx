@@ -1,4 +1,5 @@
 import ProfileCard from "@/components/ProfileCard/ProfileCard";
+import ProfileCardMobile from "@/components/ProfileCard/ProfileCardMobile";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 
@@ -22,8 +23,19 @@ export const About: React.FC = () => {
             showUserInfo={false}
             enableTilt={true}
             enableMobileTilt={false}
+            className="hidden md:block"
             behindGlowColor="rgba(125, 190, 255, 0.67)"
             iconUrl="./iconpattern.png"
+            innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
+          />
+          <ProfileCardMobile
+            avatarUrl="./batool.png"
+            showUserInfo={false}
+            enableTilt={true}
+            enableMobileTilt={false}
+            behindGlowColor="rgba(125, 190, 255, 0.67)"
+            iconUrl="./iconpattern.png"
+            className="md:hidden"
             innerGradient="linear-gradient(145deg,#60496e8c 0%,#71C4FF44 100%)"
           />
         </div>
