@@ -34,7 +34,7 @@
   perspective: 500px;
   transform: translate3d(0, 0, 0.1px);
   position: relative;
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 .pc-behind {
@@ -420,17 +420,22 @@
 }
 
 @media (max-width: 768px) {
+  .pc-card-wrapper {
+    touch-action: pan-y;
+  }
+
   .pc-card {
-    height: 70svh;
-    max-height: 450px;
+    transform: none !important;
+    transition: none;
   }
 
-  .pc-details {
-    top: 2em;
+  .pc-avatar-content .avatar {
+    transform: translateX(-50%) !important;
+    transition: none;
   }
 
-  .pc-details h3 {
-    font-size: min(4svh, 2.5em);
+  .pc-content:not(.pc-avatar-content) {
+    transform: none !important;
   }
 }
 
