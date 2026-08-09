@@ -53,7 +53,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              portfolio!!
+              portfolio!
             </ScrollFloat>
           </div>
         </div>
@@ -77,7 +77,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Fatima Zaidi!
+              Fatima Zaidi
             </ScrollFloat>
           </div>
 
@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Zaidi!
+              Zaidi
             </ScrollFloat>
           </div>
         </div>
