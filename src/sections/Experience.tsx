@@ -4,13 +4,6 @@ import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 export const Experience: React.FC = () => {
   const events = [
     {
-      year: "2026",
-      title: "Moved to Germany",
-      subtitle: "New Professional Chapter",
-      description:
-        "Relocated to Germany and started building my career in the European tech market while continuing to grow as a Full-Stack Developer.",
-    },
-    {
       year: "2025",
       title: "Software Engineer",
       subtitle: "Talverse",
