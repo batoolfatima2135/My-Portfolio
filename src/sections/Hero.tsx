@@ -89,7 +89,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              I am Batool Fatima
+              I am
             </ScrollFloat>
 
             <ScrollFloat
@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Zaidi
+              Batool Fatima Zaidi
             </ScrollFloat>
           </div>
         </div>
