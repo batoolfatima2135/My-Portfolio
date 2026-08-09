@@ -1,9 +1,15 @@
 import BorderGlow from "@/components/BorderGlow/BorderGlow";
+import LiquidGlassDialog from "@/components/Dialog/LiquidGlassDialog";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { Trophy } from "lucide-react";
+import { useState } from "react";
 
 export const Achievements: React.FC = () => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const handleImageClick = (src: string) => {
+    setSelectedImage(src);
+  };
   return (
     <section className=" md:pt-20">
       <ScrollFloat
@@ -62,20 +68,32 @@ export const Achievements: React.FC = () => {
                 </ScrollReveal>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5">
-                <div className="rounded-2xl overflow-hidden">
-                  <img
-                    src="./award.jfif"
-                    alt="Award"
-                    className="h-full w-full object-cover rounded-2xl"
-                  />
+                <div className="rounded-2xl overflow-hidden h-100">
+                  <button
+                    type="button"
+                    onClick={() => handleImageClick("./award.jfif")}
+                    className="block w-full cursor-pointer h-full"
+                  >
+                    <img
+                      src="./award.jfif"
+                      alt="Award"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                  </button>
                 </div>
 
-                <div className="rounded-2xl overflow-hidden">
-                  <img
-                    src="./value-victor.jpeg"
-                    alt="Value Victor Award"
-                    className="h-full w-full object-cover rounded-2xl"
-                  />
+                <div className="rounded-2xl overflow-hidden h-100">
+                  <button
+                    type="button"
+                    onClick={() => handleImageClick("./value-victor.jpeg")}
+                    className="block w-full cursor-pointer h-full"
+                  >
+                    <img
+                      src="./value-victor.jpeg"
+                      alt="Value Victor Award"
+                      className="w-full h-full object-cover rounded-2xl"
+                    />
+                  </button>
                 </div>
               </div>
             </BorderGlow>
@@ -121,16 +139,34 @@ export const Achievements: React.FC = () => {
                 </ScrollReveal>
               </div>
               <div className="grid grid-cols-1 gap-6 p-5 md:mt-10 sm:mt-5">
-                <div className="rounded-2xl overflow-hidden w-7/8 mx-auto">
-                  <img
-                    src="./future-leadership-program.jpeg"
-                    alt="Certificate"
-                    className="h-full w-full object-cover rounded-2xl"
-                  />
+                <div className="rounded-2xl overflow-hidden w-11/12 max-w-4xl mx-auto">
+                  <button
+                    type="button"
+                    onClick={() =>
+                      handleImageClick("./future-leadership-program.jpeg")
+                    }
+                    className="block w-7/8 cursor-pointer mx-auto"
+                  >
+                    <img
+                      src="./future-leadership-program.jpeg"
+                      alt="Certificate"
+                      className=" h-auto object-cover rounded-2xl"
+                    />
+                  </button>
                 </div>
               </div>
             </BorderGlow>
           </div>
+          <LiquidGlassDialog
+            open={selectedImage !== null}
+            onOpenChange={(open) => {
+              if (!open) {
+                setSelectedImage(null);
+              }
+            }}
+            image={selectedImage ?? ""}
+            size="md"
+          />
         </div>
       </div>
     </section>
