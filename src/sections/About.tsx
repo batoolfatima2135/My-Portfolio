@@ -2,8 +2,10 @@ import ProfileCard from "@/components/ProfileCard/ProfileCard";
 import ProfileCardMobile from "@/components/ProfileCard/ProfileCardMobile";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
+import { useTranslation } from "react-i18next";
 
 export const About: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <section className="min-h-screen md:mt-10">
       <ScrollFloat
@@ -14,7 +16,7 @@ export const About: React.FC = () => {
         stagger={0.03}
         textClassName="mb-4"
       >
-        About
+        {t("about.title")}
       </ScrollFloat>
       <section className="relative flex flex-col md:flex-row w-full container ">
         <div className="w-full md:w-1/3  text-white flex justify-center align-middle">
@@ -47,13 +49,7 @@ export const About: React.FC = () => {
             baseRotation={3}
             blurStrength={4}
           >
-            Software Engineer with 2+ years of experience building modern,
-            scalable, and high-performance web applications. I specialize in
-            creating seamless frontend experiences and robust backend solutions
-            while solving complex technical challenges. Passionate about clean
-            code, innovative solutions, and continuous learning, I enjoy
-            transforming ideas into efficient, reliable, and user-focused
-            digital products.
+            {t("about.description")}
           </ScrollReveal>
         </div>
       </section>
