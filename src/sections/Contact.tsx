@@ -6,8 +6,10 @@ import { ContactForm } from "@/components/Contact/ContactForm";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { externalLinks } from "@/Data/ExternalLinks";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
   return (
     <section className="relative  px-3 py-16 sm:px-0 sm:py-20">
       {/* Background Glow */}
@@ -25,7 +27,7 @@ export default function Contact() {
             stagger={0.03}
             textClassName="text-skills-small"
           >
-            Let's Build Something Great!
+            {t("contact.title")}
           </ScrollFloat>
           <ScrollReveal
             baseOpacity={0.1}
@@ -33,8 +35,7 @@ export default function Contact() {
             baseRotation={3}
             blurStrength={4}
           >
-            Have a project, opportunity, or just want to connect? I would love
-            to hear from you.
+            {t("contact.description")}
           </ScrollReveal>
         </div>
 
@@ -43,7 +44,7 @@ export default function Contact() {
           <div className="space-y-4 ">
             <ContactCard
               icon={<Mail />}
-              title="Email"
+              title={t("contact.email")}
               value="batoolFatima2135@gmail.com"
               href="mailto:batoolFatima2135@gmail.com"
             />
@@ -63,14 +64,14 @@ export default function Contact() {
             />
             <ContactCard
               icon={<Download />}
-              title="Resume"
-              value="Download my CV"
+              title={t("contact.resume")}
+              value={t("contact.resume-link")}
               href={externalLinks.cv}
             />
             <ContactCard
               icon={<MapPin />}
-              title="Location"
-              value="Hamburg, Germany"
+              title={t("contact.location")}
+              value={t("contact.location-value")}
             />
           </div>
 
