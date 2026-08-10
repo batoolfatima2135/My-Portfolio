@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Field } from "./Field";
+import { useTranslation } from "react-i18next";
 
 type Status = "idle" | "sending" | "success" | "error";
 
 export function ContactForm() {
+  const { t } = useTranslation();
   const [status, setStatus] = useState<Status>("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -58,9 +60,21 @@ export function ContactForm() {
       <div className="absolute -bottom-20 -left-20 h-40 w-40 rounded-full bg-blue-500/20 blur-3xl" />
 
       <div className="relative space-y-6">
-        <Field id="name" name="name" label="Name" type="text" required />
+        <Field
+          id="name"
+          name="name"
+          placeholder={t("contact.name-placeholder")}
+          type="text"
+          required
+        />
 
-        <Field id="email" name="email" label="Email" type="email" required />
+        <Field
+          id="email"
+          name="email"
+          placeholder={t("contact.email-placeholder")}
+          type="email"
+          required
+        />
 
         <div>
           <label
@@ -73,7 +87,7 @@ export function ContactForm() {
             text-gray-300
         "
           >
-            Message
+            {t("contact.message")}
           </label>
 
           <textarea
@@ -81,7 +95,7 @@ export function ContactForm() {
             name="message"
             rows={5}
             required
-            placeholder="Tell me about it..."
+            placeholder={t("contact.message-placeholder")}
             className="
             w-full
             rounded-2xl
@@ -125,7 +139,7 @@ export function ContactForm() {
             "
         >
           <span className="relative z-10 cursor-pointer">
-            {status === "sending" ? "Sending..." : "Send Message"}
+            {status === "sending" ? t("contact.send") : t("contact.send")}
           </span>
         </button>
 
