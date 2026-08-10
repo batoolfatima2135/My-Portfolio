@@ -4,12 +4,14 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export const Hero: React.FC = () => {
   const wrapperRef = useRef<HTMLDivElement>(null);
   const indicatorRef = useRef<HTMLDivElement>(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const wrapper = wrapperRef.current;
@@ -44,7 +46,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Welcome to my
+              {t("hero.greeting1")}
             </ScrollFloat>
             <ScrollFloat
               animationDuration={1.2}
@@ -53,7 +55,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              portfolio!
+              {t("hero.greeting2")}
             </ScrollFloat>
           </div>
         </div>
@@ -67,7 +69,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              I am Batool
+              {t("hero.mob-title1")}
             </ScrollFloat>
 
             <ScrollFloat
@@ -77,7 +79,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Fatima Zaidi
+              {t("hero.mob-title2")}
             </ScrollFloat>
           </div>
 
@@ -89,7 +91,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              I am
+              {t("hero.web-title1")}
             </ScrollFloat>
 
             <ScrollFloat
@@ -99,7 +101,7 @@ export const Hero: React.FC = () => {
               scrollEnd="bottom center"
               stagger={0.05}
             >
-              Batool Fatima Zaidi
+              {t("hero.web-title2")}
             </ScrollFloat>
           </div>
         </div>
@@ -114,7 +116,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <span className="text-xs tracking-[0.3em] uppercase opacity-80">
-            Scroll Down
+            {t("hero.scroll-text")}
           </span>
         </div>
       </div>
