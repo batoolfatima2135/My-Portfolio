@@ -1,42 +1,39 @@
 import { ScrollTimeline } from "@/components/ScrollTimeline/scroll-timeline";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
+import { useTranslation } from "react-i18next";
 
 export const Experience: React.FC = () => {
+  const { t } = useTranslation();
   const events = [
     {
-      year: "2025",
-      title: "Software Engineer",
-      subtitle: "Talverse",
-      description:
-        "Worked on scalable web applications by integrating payment gateways, implementing Keycloak authentication and authorization, and creating interactive animated experiences using React and GSAP.",
+      year: t("experience.events.softwareEngineer.year"),
+      title: t("experience.events.softwareEngineer.title"),
+      subtitle: t("experience.events.softwareEngineer.subtitle"),
+      description: t("experience.events.softwareEngineer.description"),
     },
     {
-      year: "2024",
-      title: "Associate Software Engineer",
-      subtitle: "Talverse",
-      description:
-        "Optimized frontend performance through lazy loading and code splitting, achieving 85%+ Lighthouse performance scores. Developed modern applications using React, Next.js, and ASP.NET.",
+      year: t("experience.events.associateSoftwareEngineer.year"),
+      title: t("experience.events.associateSoftwareEngineer.title"),
+      subtitle: t("experience.events.associateSoftwareEngineer.subtitle"),
+      description: t("experience.events.associateSoftwareEngineer.description"),
     },
     {
-      year: "2023",
-      title: "MERN Stack Developer",
-      subtitle: "Native Brains",
-      description:
-        "Developed full-stack web applications using MongoDB, Express.js, React, and Node.js. Mentored junior developers and contributed to improving code quality through reviews and refactoring.",
+      year: t("experience.events.mernDeveloper.year"),
+      title: t("experience.events.mernDeveloper.title"),
+      subtitle: t("experience.events.mernDeveloper.subtitle"),
+      description: t("experience.events.mernDeveloper.description"),
     },
     {
-      year: "2023",
-      title: "Full-Stack Development Program",
-      subtitle: "Microverse",
-      description:
-        "Completed 1300+ hours of intensive full-stack development training, focusing on JavaScript, React, Ruby on Rails, databases, testing, and collaborative software development.",
+      year: t("experience.events.microverse.year"),
+      title: t("experience.events.microverse.title"),
+      subtitle: t("experience.events.microverse.subtitle"),
+      description: t("experience.events.microverse.description"),
     },
     {
-      year: "2022",
-      title: "Started Web Development Career",
-      subtitle: "WordPress Developer",
-      description:
-        "Built and maintained websites using WordPress while developing a strong foundation in frontend technologies and web development practices.",
+      year: t("experience.events.wordpress.year"),
+      title: t("experience.events.wordpress.title"),
+      subtitle: t("experience.events.wordpress.subtitle"),
+      description: t("experience.events.wordpress.description"),
     },
   ];
   return (
@@ -48,7 +45,7 @@ export const Experience: React.FC = () => {
         scrollEnd="bottom bottom-=40%"
         stagger={0.03}
       >
-        Experience
+        {t("experience.title")}
       </ScrollFloat>
       <div>
         <ScrollTimeline
