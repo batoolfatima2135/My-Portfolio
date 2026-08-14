@@ -7,9 +7,14 @@ import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { externalLinks } from "@/Data/ExternalLinks";
 import { useTranslation } from "react-i18next";
+import i18n from "@/i18n/i18n";
 
 export default function Contact() {
+  const currentLanguage = i18n.language.startsWith("de") ? "de" : "en";
   const { t } = useTranslation();
+  const cvLink =
+    currentLanguage === "de" ? externalLinks.cv.de : externalLinks.cv.en;
+
   return (
     <section className="relative  px-3 py-16 sm:px-0 sm:py-20">
       {/* Background Glow */}
@@ -66,7 +71,7 @@ export default function Contact() {
               icon={<Download />}
               title={t("contact.resume")}
               value={t("contact.resume-link")}
-              href={externalLinks.cv}
+              href={cvLink}
             />
             <ContactCard
               icon={<MapPin />}

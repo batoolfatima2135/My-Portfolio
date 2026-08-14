@@ -24,6 +24,8 @@ export default function Navbar() {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language.startsWith("de") ? "de" : "en";
   const { t } = useTranslation();
+  const cvLink =
+    currentLanguage === "de" ? externalLinks.cv.de : externalLinks.cv.en;
 
   const changeLanguage = (language: "en" | "de") => {
     i18n.changeLanguage(language);
@@ -66,7 +68,7 @@ export default function Navbar() {
               GitHub
             </a>
             <a
-              href={externalLinks.cv}
+              href={cvLink}
               target="_blank"
               rel="noreferrer"
               className="flex 
@@ -185,7 +187,7 @@ export default function Navbar() {
                   </motion.a>
                 ))}
                 <motion.a
-                  href={externalLinks.cv}
+                  href={cvLink}
                   target="_blank"
                   rel="noreferrer"
                   initial={{

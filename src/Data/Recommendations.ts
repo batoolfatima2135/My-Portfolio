@@ -2,9 +2,19 @@ import type { ChromaItem } from "@/components/ChromaGrid/ChromaGrid";
 
 export const recommendations: ChromaItem[] = [
   {
+    name: "Zuhair Rizvi",
+    role: "recommendations.roles.head-product",
+    category: "recommendations.categories.learning-adaptability",
+    borderColor: "#8B5CF6",
+    gradient: "linear-gradient(225deg, #8B5CF6, #000)",
+    url: "https://www.linkedin.com/in/zuhair-rizvi/",
+    quote:
+      "Batool quickly stood out for her professionalism, strong problem-solving skills, and ability to grasp advanced software engineering concepts beyond what you would typically expect at her level. She is a dedicated, capable, and fast-learning software engineer.",
+  },
+  {
     name: "Kumail Raza",
-    role: "Software Architect at Talverse",
-    category: "Ownership & Excellence",
+    role: "recommendations.roles.software-architect",
+    category: "recommendations.categories.ownership-excellence",
     borderColor: "#F59E0B",
     gradient: "linear-gradient(165deg, #F59E0B, #000)",
     url: "https://www.linkedin.com/in/smkrn/",
@@ -14,8 +24,8 @@ export const recommendations: ChromaItem[] = [
   {
     name: "Hasnain Ali",
     url: "https://www.linkedin.com/in/hasnain-ali-mirza/",
-    role: "Senior Technical Project Manager at Talverse",
-    category: "Leadership & Growth",
+    role: "recommendations.roles.senior-technical-project-manager",
+    category: "recommendations.categories.leadership-growth",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
     quote:
@@ -23,9 +33,9 @@ export const recommendations: ChromaItem[] = [
   },
   {
     name: "Ali Akbar",
-    role: "Senior Product Manager at Talverse",
+    role: "recommendations.roles.senior-software-engineer",
     url: "https://www.linkedin.com/in/ali-akbar-syed09900/",
-    category: "Teamwork & Reliability",
+    category: "recommendations.categories.teamwork-reliability",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
     quote:
@@ -34,8 +44,8 @@ export const recommendations: ChromaItem[] = [
 
   {
     name: "Mehdi Hussain",
-    role: "Product Manager at Talverse",
-    category: "Problem Solving",
+    role: "recommendations.roles.product-manager",
+    category: "recommendations.categories.problem-solving",
     borderColor: "#06B6D4",
     gradient: "linear-gradient(135deg, #06B6D4, #000)",
     url: "https://www.linkedin.com/in/mehdihf/",
@@ -44,8 +54,8 @@ export const recommendations: ChromaItem[] = [
   },
   {
     name: "Aun Ali",
-    role: "SQA Engineer at Talverse",
-    category: "Communication & Collaboration",
+    role: "recommendations.roles.sqa-engineer",
+    category: "recommendations.categories.communication-collaboration",
     url: "https://www.linkedin.com/in/aun-ali-19147821a/",
     borderColor: "#EF4444",
     gradient: "linear-gradient(195deg, #EF4444, #000)",
@@ -54,8 +64,8 @@ export const recommendations: ChromaItem[] = [
   },
   {
     name: "Safdar Abbas",
-    role: "SQA Engineer at Talverse",
-    category: "Technical Expertise",
+    role: "recommendations.roles.sqa-engineer",
+    category: "recommendations.categories.technical-expertise",
     url: "https://www.linkedin.com/in/safdar-abbas-zaidi-978388bb/",
     borderColor: "#8B5CF6",
     gradient: "linear-gradient(225deg, #8B5CF6, #000)",
@@ -64,8 +74,8 @@ export const recommendations: ChromaItem[] = [
   },
   {
     name: "Hammad Rizvi",
-    role: "Senior Software Engineer at Talverse",
-    category: "Engineering Skills",
+    role: "recommendations.roles.senior-software-engineer",
+    category: "recommendations.categories.engineering-skills",
     url: "https://www.linkedin.com/in/hammad-abbas-rizvi/",
     borderColor: "#F59E0B",
     gradient: "linear-gradient(165deg, #F59E0B, #000)",
@@ -74,8 +84,8 @@ export const recommendations: ChromaItem[] = [
   },
   {
     name: "Salman Ali",
-    role: "Associate Software Engineer at Talverse",
-    category: "Mentorship & Support",
+    role: "recommendations.roles.associate-software-engineer",
+    category: "recommendations.categories.mentorship-support",
     url: "https://www.linkedin.com/in/syedsalmanalizaidi",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",

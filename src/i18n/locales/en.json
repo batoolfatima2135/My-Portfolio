@@ -67,7 +67,29 @@
   },
   "recommendations": {
     "title": "Recommendations",
-    "view-all": "View All Recommendations on LinkedIn"
+    "view-all": "View All Recommendations on LinkedIn",
+    "roles": {
+      "head-product": "Head of Product at Talverse",
+      "software-architect": "Software Architect at Talverse",
+      "senior-technical-project-manager": "Senior Technical Project Manager at Talverse",
+      "senior-product-manager": "Senior Product Manager at Talverse",
+      "product-manager": "Product Manager at Talverse",
+      "sqa-engineer": "SQA Engineer at Talverse",
+      "senior-software-engineer": "Senior Software Engineer at Talverse",
+      "associate-software-engineer": "Associate Software Engineer at Talverse"
+    },
+
+    "categories": {
+      "learning-adaptability": "Learning & Adaptability",
+      "ownership-excellence": "Ownership & Excellence",
+      "leadership-growth": "Leadership & Growth",
+      "teamwork-reliability": "Teamwork & Reliability",
+      "problem-solving": "Problem Solving",
+      "communication-collaboration": "Communication & Collaboration",
+      "technical-expertise": "Technical Expertise",
+      "engineering-skills": "Engineering Skills",
+      "mentorship-support": "Mentorship & Support"
+    }
   },
   "contact": {
     "title": "Contact",
