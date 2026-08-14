@@ -22,10 +22,9 @@ export const SkillCard = ({ logos, title }: SkillCardProps) => {
     >
       <div className="p-8 w-full">
         <ScrollFloat
-          animationDuration={1}
-          ease="back.inOut(2)"
-          scrollStart="center bottom+=50%"
-          scrollEnd="bottom bottom-=40%"
+          animationDuration={0.8}
+          scrollStart="center bottom"
+          scrollEnd="bottom bottom"
           stagger={0.03}
           textClassName="text-skills-small mb-4"
         >

@@ -43,10 +43,9 @@ export const Achievements: React.FC = () => {
                 </div>
 
                 <ScrollFloat
-                  animationDuration={1}
-                  ease="back.inOut(2)"
-                  scrollStart="center bottom+=50%"
-                  scrollEnd="bottom bottom-=40%"
+                  animationDuration={0.8}
+                  scrollStart="center bottom"
+                  scrollEnd="bottom bottom"
                   stagger={0.03}
                   textClassName="text-achievement"
                 >
@@ -109,10 +108,9 @@ export const Achievements: React.FC = () => {
             >
               <div className=" flex pt-5 items-center  justify-center md:p-10">
                 <ScrollFloat
-                  animationDuration={1}
-                  ease="back.inOut(2)"
-                  scrollStart="center bottom+=50%"
-                  scrollEnd="bottom bottom-=40%"
+                  animationDuration={0.8}
+                  scrollStart="center bottom"
+                  scrollEnd="bottom bottom"
                   stagger={0.03}
                   textClassName="text-achievement"
                 >
