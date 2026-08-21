@@ -1,13 +1,13 @@
 export const Field = ({
   id,
   name,
-  label,
+  placeholder,
   type,
   required,
 }: {
   id: string;
   name: string;
-  label: string;
+  placeholder: string;
   type: string;
   required?: boolean;
 }) => {
@@ -18,7 +18,7 @@ export const Field = ({
         name={name}
         type={type}
         required={required}
-        placeholder={`Enter your ${label.toLowerCase()}`}
+        placeholder={placeholder}
         className="
           w-full
           rounded-2xl

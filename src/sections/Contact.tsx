@@ -6,8 +6,15 @@ import { ContactForm } from "@/components/Contact/ContactForm";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { externalLinks } from "@/Data/ExternalLinks";
+import { useTranslation } from "react-i18next";
+import i18n from "@/i18n/i18n";
 
 export default function Contact() {
+  const currentLanguage = i18n.language.startsWith("de") ? "de" : "en";
+  const { t } = useTranslation();
+  const cvLink =
+    currentLanguage === "de" ? externalLinks.cv.de : externalLinks.cv.en;
+
   return (
     <section className="relative  px-3 py-16 sm:px-0 sm:py-20">
       {/* Background Glow */}
@@ -25,7 +32,7 @@ export default function Contact() {
             stagger={0.03}
             textClassName="text-skills-small"
           >
-            Let's Build Something Great!
+            {t("contact.title")}
           </ScrollFloat>
           <ScrollReveal
             baseOpacity={0.1}
@@ -33,8 +40,7 @@ export default function Contact() {
             baseRotation={3}
             blurStrength={4}
           >
-            Have a project, opportunity, or just want to connect? I would love
-            to hear from you.
+            {t("contact.description")}
           </ScrollReveal>
         </div>
 
@@ -43,7 +49,7 @@ export default function Contact() {
           <div className="space-y-4 ">
             <ContactCard
               icon={<Mail />}
-              title="Email"
+              title={t("contact.email")}
               value="batoolFatima2135@gmail.com"
               href="mailto:batoolFatima2135@gmail.com"
             />
@@ -63,14 +69,14 @@ export default function Contact() {
             />
             <ContactCard
               icon={<Download />}
-              title="Resume"
-              value="Download my CV"
-              href={externalLinks.cv}
+              title={t("contact.resume")}
+              value={t("contact.resume-link")}
+              href={cvLink}
             />
             <ContactCard
               icon={<MapPin />}
-              title="Location"
-              value="Hamburg, Germany"
+              title={t("contact.location")}
+              value={t("contact.location-value")}
             />
           </div>
 

@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "cv-text": "Lebenslauf herunterladen",
+    "language": "Sprache"
+  },
+  "hero": {
+    "greeting1": "Herzlich ",
+    "greeting2": "willkommen!",
+    "web-title1": "Ich bin ",
+    "web-title2": "Batool Fatima Zaidi",
+    "mob-title1": "Ich bin Batool",
+    "mob-title2": "Fatima Zaidi",
+    "scroll-text": "Scroll nach unten"
+  },
+  "about": {
+    "title": "Über mich",
+    "description": "Softwareentwicklerin mit über 2 Jahren Erfahrung in der Entwicklung moderner und leistungsstarker Webanwendungen. Ich arbeite gerne an benutzerfreundlichen Frontend-Lösungen und zuverlässigen Backend-Systemen. Dabei lege ich Wert auf sauberen Code, gute Lösungen und kontinuierliches Lernen. Ich entwickle gerne aus Ideen praktische und effiziente digitale Produkte."
+  },
+  "skills": {
+    "title": "Fähigkeiten",
+    "description": "Erfahren in der Entwicklung moderner, responsiver und skalierbarer Webanwendungen mit React, Next.js, TypeScript, C#, ASP.NET und Node.js. Ich arbeite mit REST-APIs, SQL-Datenbanken, Tests und CI/CD und bin mit agilen Entwicklungsmethoden vertraut.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps"
+  },
+
+  "experience": {
+    "title": "Berufserfahrung",
+    "events": {
+      "softwareEngineer": {
+        "year": "2025",
+        "title": "Softwareentwicklerin",
+        "subtitle": "Talverse",
+        "description": "Entwicklung skalierbarer Webanwendungen durch die Integration von Zahlungssystemen und die Implementierung von Keycloak für Authentifizierung und Autorisierung. Außerdem habe ich interaktive und animierte Web-Erlebnisse mit React und GSAP entwickelt."
+      },
+      "associateSoftwareEngineer": {
+        "year": "2024",
+        "title": "Associate Softwareentwicklerin",
+        "subtitle": "Talverse",
+        "description": "Verbesserung der Frontend-Performance durch Lazy Loading und Code Splitting mit einem Lighthouse-Performance-Score von über 85 %. Entwicklung moderner Anwendungen mit React, Next.js und ASP.NET."
+      },
+      "mernDeveloper": {
+        "year": "2023",
+        "title": "MERN Stack Entwicklerin",
+        "subtitle": "Native Brains",
+        "description": "Entwicklung von Full-Stack-Webanwendungen mit MongoDB, Express.js, React und Node.js. Unterstützung von Junior-Entwicklern sowie Verbesserung der Codequalität durch Code Reviews und Refactoring."
+      },
+      "microverse": {
+        "year": "2023",
+        "title": "Full-Stack-Entwicklungsprogramm",
+        "subtitle": "Microverse",
+        "description": "Abschluss eines intensiven Full-Stack-Entwicklungsprogramms mit über 1.300 Stunden. Schwerpunkte waren JavaScript, React, Ruby on Rails, Datenbanken, Testing und die Zusammenarbeit in der Softwareentwicklung."
+      },
+      "wordpress": {
+        "year": "2022",
+        "title": "Start meiner Karriere in der Webentwicklung",
+        "subtitle": "WordPress-Entwicklerin",
+        "description": "Entwicklung und Pflege von Websites mit WordPress sowie Aufbau fundierter Kenntnisse in Frontend-Technologien und moderner Webentwicklung."
+      }
+    }
+  },
+  "achievements": {
+    "title": "Auszeichnungen",
+    "value-victor": "Value Victor Award",
+    "value-victor-description": "Ich wurde von Talverse mit dem Value Victor Award (Q3 2025) für meine Eigeninitiative, technische Kompetenz und Führungsstärke ausgezeichnet. Die Auszeichnung würdigt meinen Beitrag zur erfolgreichen Umsetzung von Projekten und zur Lösung komplexer technischer Herausforderungen. Sie zeigt mir, dass mein Team und mein Unternehmen meiner Arbeit und meinem Engagement vertrauen.",
+    "leadership-award": "Leadership programm",
+    "leadership-award-description": "Als Vertreterin der Engineering-Abteilung für das Future Leadership Program 2025 von Talverse ausgewählt. Dabei konnte ich meine Fähigkeiten in Führung, Kommunikation und Präsentation durch die Zusammenarbeit mit Kollegen, bereichsübergreifende Teamarbeit und wirkungsvolle Präsentationen weiterentwickeln und unter Beweis stellen. Außerdem konnte ich wertvolle Einblicke in moderne Führung gewinnen."
+  },
+  "recommendations": {
+    "title": "Empfehlungen",
+    "view-all": "Alle Empfehlungen auf LinkedIn ansehen",
+    "roles": {
+      "head-product": "Leiter der Produktabteilung bei Talverse",
+      "software-architect": "Softwarearchitekt bei Talverse",
+      "senior-technical-project-manager": "Senior Technical Project Manager bei Talverse",
+      "senior-product-manager": "Senior Product Manager bei Talverse",
+      "product-manager": "Product Manager bei Talverse",
+      "sqa-engineer": "SQA Engineer bei Talverse",
+      "senior-software-engineer": "Senior Software Engineer bei Talverse",
+      "associate-software-engineer": "Associate Software Engineer bei Talverse"
+    },
+
+    "categories": {
+      "learning-adaptability": "Lernfähigkeit & Anpassungsfähigkeit",
+      "ownership-excellence": "Verantwortungsbewusstsein & Exzellenz",
+      "leadership-growth": "Führung & Weiterentwicklung",
+      "teamwork-reliability": "Teamarbeit & Zuverlässigkeit",
+      "problem-solving": "Problemlösung",
+      "communication-collaboration": "Kommunikation & Zusammenarbeit",
+      "technical-expertise": "Technische Expertise",
+      "engineering-skills": "Engineering-Kompetenz",
+      "mentorship-support": "Mentoring & Unterstützung"
+    }
+  },
+  "contact": {
+    "title": "Kontakt",
+    "description": "Ich freue mich über Ihre Nachricht! Bitte zögern Sie nicht, mich zu kontaktieren, wenn Sie Fragen haben oder zusammenarbeiten möchten. Ich werde mein Bestes tun, um Ihnen so schnell wie möglich zu antworten.",
+    "email": "E-Mail",
+    "resume": "Lebenslauf",
+    "resume-link": "Lebenslauf herunterladen",
+    "location": "Ort",
+    "location-value": "Hamburg, Deutschland",
+    "message": "Nachricht",
+    "send": "Nachricht Senden",
+    "message-placeholder": "Schreiben Sie Ihre Nachricht hier...",
+    "email-placeholder": "Geben Sie Ihre E-Mail-Adresse ein...",
+    "name-placeholder": "Geben Sie Ihren Namen ein..."
+  }
+}

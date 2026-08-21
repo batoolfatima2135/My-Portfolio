@@ -2,8 +2,15 @@ import ChromaGrid from "@/components/ChromaGrid/ChromaGrid";
 import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import { externalLinks } from "@/Data/ExternalLinks";
 import { recommendations } from "@/Data/Recommendations";
+import { useTranslation } from "react-i18next";
 
 export const Recommendation: React.FC = () => {
+  const { t } = useTranslation();
+  const translatedRecommendations = recommendations.map((recommendation) => ({
+    ...recommendation,
+    role: t(recommendation.role),
+    category: t(recommendation.category),
+  }));
   return (
     <section className="mt-10 md:mt-30">
       <ScrollFloat
@@ -13,11 +20,11 @@ export const Recommendation: React.FC = () => {
         scrollEnd="bottom bottom-=40%"
         stagger={0.03}
       >
-        Recommendations
+        {t("recommendations.title")}
       </ScrollFloat>
       <div className="mt-5 md:mt-15">
         <ChromaGrid
-          items={recommendations}
+          items={translatedRecommendations}
           radius={300}
           damping={0.45}
           fadeOut={0.6}
@@ -49,7 +56,7 @@ export const Recommendation: React.FC = () => {
                 disabled:opacity-50
             "
         >
-          View All Recommendations on LinkedIn
+          {t("recommendations.view-all")}
         </a>
       </div>
     </section>

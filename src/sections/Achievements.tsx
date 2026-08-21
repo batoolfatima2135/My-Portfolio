@@ -4,12 +4,14 @@ import ScrollFloat from "@/components/ScrollFloat/ScrollFloat";
 import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { Trophy } from "lucide-react";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Achievements: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
   const handleImageClick = (src: string) => {
     setSelectedImage(src);
   };
+  const { t } = useTranslation();
   return (
     <section className=" md:pt-20">
       <ScrollFloat
@@ -19,7 +21,7 @@ export const Achievements: React.FC = () => {
         scrollEnd="bottom bottom-=40%"
         stagger={0.03}
       >
-        Achievements
+        {t("achievements.title")}
       </ScrollFloat>
       <div className="w-full px-1 md:px-8 lg:px-12 md:py-8 mx-auto">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 p-6">
@@ -47,7 +49,7 @@ export const Achievements: React.FC = () => {
                   stagger={0.03}
                   textClassName="text-achievement"
                 >
-                  Value Victor Award
+                  {t("achievements.value-victor")}
                 </ScrollFloat>
               </div>
               <div className="px-5">
@@ -58,12 +60,7 @@ export const Achievements: React.FC = () => {
                   blurStrength={4}
                   textClassName="text-skills-xs"
                 >
-                  Honored with Talverse's quarterly Value Victor Award (Q3 2025)
-                  award for demonstrating ownership, resilience, technical
-                  excellence, and leadership while delivering successful project
-                  outcomes and solving complex engineering challenges. It was
-                  especially meaningful because it reflected the trust my team
-                  and company placed in my work.
+                  {t("achievements.value-victor-description")}
                 </ScrollReveal>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 p-5">
@@ -117,7 +114,7 @@ export const Achievements: React.FC = () => {
                   stagger={0.03}
                   textClassName="text-achievement"
                 >
-                  Leadership Program
+                  {t("achievements.leadership-award")}
                 </ScrollFloat>
               </div>
               <div className="md:px-5">
@@ -128,12 +125,7 @@ export const Achievements: React.FC = () => {
                   blurStrength={4}
                   textClassName="text-skills-xs"
                 >
-                  Selected as the Engineering Department representative for
-                  Talverse's Future Leadership Program 2025. Strengthened and
-                  proved my leadership, communication, and presentation skills
-                  through peer collaboration, cross-functional teamwork, and
-                  delivering impactful presentations while gaining insights into
-                  effective leadership practices.
+                  {t("achievements.leadership-award-description")}
                 </ScrollReveal>
               </div>
               <div className="grid grid-cols-1 gap-6 p-5 md:mt-10 sm:mt-5">

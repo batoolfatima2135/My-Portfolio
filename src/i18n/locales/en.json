@@ -1,0 +1,108 @@
+{
+  "nav": {
+    "cv-text": "Download CV",
+    "language": "language"
+  },
+  "hero": {
+    "greeting1": "Welcome to my",
+    "greeting2": "portfolio!",
+    "web-title1": "I am",
+    "web-title2": "Batool Fatima Zaidi",
+    "mob-title1": "I am Batool",
+    "mob-title2": "Fatima Zaidi",
+    "scroll-text": "Scroll Down"
+  },
+  "about": {
+    "title": "About",
+    "description": "Software Engineer with 2+ years of experience building modern, scalable, and high-performance web applications. I specialize in creating seamless frontend experiences and robust backend solutions while solving complex technical challenges. Passionate about clean code, innovative solutions, and continuous learning, I enjoy transforming ideas into efficient, reliable, and user-focused digital products."
+  },
+  "skills": {
+    "title": "Skills",
+    "description": "Skilled in building modern, responsive, and scalable web applications using React, Next.js, TypeScript, C#, ASP.NET, and Node.js. Experienced with REST APIs, SQL databases, testing, CI/CD, and Agile development practices to deliver high-quality software.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "tools": "Tools & DevOps"
+  },
+  "experience": {
+    "title": "Experience",
+    "events": {
+      "softwareEngineer": {
+        "year": "2025",
+        "title": "Software Engineer",
+        "subtitle": "Talverse",
+        "description": "Worked on scalable web applications by integrating payment gateways, implementing Keycloak authentication and authorization, and creating interactive animated experiences using React and GSAP."
+      },
+      "associateSoftwareEngineer": {
+        "year": "2024",
+        "title": "Associate Software Engineer",
+        "subtitle": "Talverse",
+        "description": "Optimized frontend performance through lazy loading and code splitting, achieving 85%+ Lighthouse performance scores. Developed modern applications using React, Next.js, and ASP.NET."
+      },
+      "mernDeveloper": {
+        "year": "2023",
+        "title": "MERN Stack Developer",
+        "subtitle": "Native Brains",
+        "description": "Developed full-stack web applications using MongoDB, Express.js, React, and Node.js. Mentored junior developers and contributed to improving code quality through reviews and refactoring."
+      },
+      "microverse": {
+        "year": "2023",
+        "title": "Full-Stack Development Program",
+        "subtitle": "Microverse",
+        "description": "Completed 1300+ hours of intensive full-stack development training, focusing on JavaScript, React, Ruby on Rails, databases, testing, and collaborative software development."
+      },
+      "wordpress": {
+        "year": "2022",
+        "title": "Started Web Development Career",
+        "subtitle": "WordPress Developer",
+        "description": "Built and maintained websites using WordPress while developing a strong foundation in frontend technologies and web development practices."
+      }
+    }
+  },
+  "achievements": {
+    "title": "Achievements",
+    "value-victor": "Value Victor Award",
+    "value-victor-description": "Honored with Talverse's quarterly Value Victor Award (Q3 2025) for demonstrating ownership, resilience, technical excellence, and leadership while delivering successful project outcomes and solving complex engineering challenges. It was especially meaningful because it reflected the trust my team and company placed in my work.",
+    "leadership-award": "Leadership program",
+    "leadership-award-description": " Selected as the Engineering Department representative for Talverse's Future Leadership Program 2025. Strengthened and proved my leadership, communication, and presentation skills through peer collaboration, cross-functional teamwork, and delivering impactful presentations while gaining insights into effective leadership practices."
+  },
+  "recommendations": {
+    "title": "Recommendations",
+    "view-all": "View All Recommendations on LinkedIn",
+    "roles": {
+      "head-product": "Head of Product at Talverse",
+      "software-architect": "Software Architect at Talverse",
+      "senior-technical-project-manager": "Senior Technical Project Manager at Talverse",
+      "senior-product-manager": "Senior Product Manager at Talverse",
+      "product-manager": "Product Manager at Talverse",
+      "sqa-engineer": "SQA Engineer at Talverse",
+      "senior-software-engineer": "Senior Software Engineer at Talverse",
+      "associate-software-engineer": "Associate Software Engineer at Talverse"
+    },
+
+    "categories": {
+      "learning-adaptability": "Learning & Adaptability",
+      "ownership-excellence": "Ownership & Excellence",
+      "leadership-growth": "Leadership & Growth",
+      "teamwork-reliability": "Teamwork & Reliability",
+      "problem-solving": "Problem Solving",
+      "communication-collaboration": "Communication & Collaboration",
+      "technical-expertise": "Technical Expertise",
+      "engineering-skills": "Engineering Skills",
+      "mentorship-support": "Mentorship & Support"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Have a project, opportunity, or just want to connect? I would love to hear from you.",
+    "email": "E-Mail",
+    "resume": "Resume",
+    "resume-link": "Download Resume",
+    "location": "Location",
+    "location-value": "Hamburg, Germany",
+    "message": "Message",
+    "send": "Send Message",
+    "message-placeholder": "Tell me about it...",
+    "email-placeholder": "Enter your email address",
+    "name-placeholder": "Enter your name"
+  }
+}

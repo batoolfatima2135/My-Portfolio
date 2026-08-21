@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Download, Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 import { externalLinks } from "@/Data/ExternalLinks";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -20,7 +21,16 @@ export default function Navbar() {
       href: externalLinks.gitHub,
     },
   ];
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language.startsWith("de") ? "de" : "en";
+  const { t } = useTranslation();
+  const cvLink =
+    currentLanguage === "de" ? externalLinks.cv.de : externalLinks.cv.en;
 
+  const changeLanguage = (language: "en" | "de") => {
+    i18n.changeLanguage(language);
+    localStorage.setItem("language", language);
+  };
   return (
     <header className="fixed top-4 left-1/2 z-50 w-[92%] max-w-7xl -translate-x-1/2">
       <nav className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 backdrop-blur-3xl shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
@@ -49,7 +59,6 @@ export default function Navbar() {
             >
               LinkedIn
             </a>
-
             <a
               href={externalLinks.gitHub}
               target="_blank"
@@ -58,9 +67,8 @@ export default function Navbar() {
             >
               GitHub
             </a>
-
             <a
-              href={externalLinks.cv}
+              href={cvLink}
               target="_blank"
               rel="noreferrer"
               className="flex 
@@ -81,8 +89,23 @@ export default function Navbar() {
                         disabled:opacity-50 hover:bg-white/20"
             >
               <Download size={16} />
-              Download CV
+              {t("nav.cv-text")}
             </a>
+            {/* Language Switcher */}
+            <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
+              <button
+                onClick={() => changeLanguage("en")}
+                className={`cursor-pointer rounded-full px-2.5 py-1 text-xs font-medium transition ${currentLanguage === "en" ? "bg-white text-black" : "text-gray-400 hover:text-white"}`}
+              >
+                EN
+              </button>
+              <button
+                onClick={() => changeLanguage("de")}
+                className={`cursor-pointer rounded-full px-2.5 py-1 text-xs font-medium transition ${currentLanguage === "de" ? "bg-white text-black" : "text-gray-400 hover:text-white"}`}
+              >
+                DE
+              </button>
+            </div>
           </div>
 
           {/* Mobile Toggle */}
@@ -163,9 +186,8 @@ export default function Navbar() {
                     {item.name}
                   </motion.a>
                 ))}
-
                 <motion.a
-                  href={externalLinks.cv}
+                  href={cvLink}
                   target="_blank"
                   rel="noreferrer"
                   initial={{
@@ -196,8 +218,28 @@ export default function Navbar() {
                   "
                 >
                   <Download size={16} />
-                  Download CV
+                  {t("nav.cv-text")}
                 </motion.a>
+                {/* Mobile Language Switcher */}
+                <div className="mt-1 flex items-center justify-between rounded-lg px-3 py-2">
+                  <span className="text-sm text-gray-400">
+                    {t("nav.language")}
+                  </span>
+                  <div className="flex items-center rounded-full border border-white/10 bg-white/5 p-1">
+                    <button
+                      onClick={() => changeLanguage("en")}
+                      className={`rounded-full px-3 py-1 text-xs font-medium transition ${currentLanguage === "en" ? "bg-white text-black" : "text-gray-400 hover:text-white"}`}
+                    >
+                      EN
+                    </button>
+                    <button
+                      onClick={() => changeLanguage("de")}
+                      className={`rounded-full px-3 py-1 text-xs font-medium transition ${currentLanguage === "de" ? "bg-white text-black" : "text-gray-400 hover:text-white"}`}
+                    >
+                      DE
+                    </button>
+                  </div>
+                </div>
               </div>
             </motion.div>
           )}
