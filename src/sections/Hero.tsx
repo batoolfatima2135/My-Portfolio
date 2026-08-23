@@ -54,7 +54,7 @@ export const Hero: React.FC = () => {
                 <iframe
                   key={videoId}
                   className="h-full w-full rounded-xl"
-                  src={`https://www.youtube.com/embed/${videoId}?autoplay=1`}
+                  src={`https://www.youtube.com/embed/${videoId}`}
                   title="Introduction Video"
                   allow="autoplay; encrypted-media; picture-in-picture"
                   allowFullScreen
