@@ -1,75 +1,187 @@
-# React + TypeScript + Vite
+# ✨ Batool Fatima — Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, interactive, and responsive developer portfolio built with **React, TypeScript, and Vite**. The portfolio showcases my professional experience, technical skills, achievements, and recommendations while focusing on smooth interactions, performance, and a modern user experience.
 
-Currently, two official plugins are available:
+🔗 **Live Portfolio:** [https://batool-fatima-zaidi.vercel.app](https://batool-fatima-zaidi.vercel.app/)
+💼 **LinkedIn:** [linkedin.com/in/batoolfatima2135](https://www.linkedin.com/in/batoolfatima2135)
+🐙 **GitHub:** [github.com/batoolfatima2135](https://github.com/batoolfatima2135)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* 🎨 Modern and interactive UI
+* 📱 Responsive design for desktop, tablet, and mobile
+* ⚡ Fast development and production builds with Vite
+* 🖱️ Smooth scrolling with Lenis
+* ✨ Advanced animations and scroll-based interactions with GSAP
+* 🌌 Interactive particle background
+* 🧩 Component-based React architecture
+* 🏆 Dedicated achievements section
+* 💼 Professional experience showcase
+* 📬 Contact section
+* 🔗 Dedicated routes for achievements and certificates
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Frontend
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+* **React**
+* **TypeScript**
+* **HTML5**
+* **CSS3**
+* **Tailwind CSS**
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Animation & Interaction
 
+* **GSAP**
+* **ScrollTrigger**
+* **Lenis**
+
+### Development Tools
+
+* **Vite**
+* **ESLint**
+* **Git**
+* **GitHub**
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Navbar/
+│   └── ParticleBackground/
+│
+├── pages/
+│   ├── Portfolio.tsx
+│   └── AllAchievements.tsx
+│
+├── sections/
+│   ├── Hero.tsx
+│   ├── About.tsx
+│   ├── Skills.tsx
+│   ├── Achievements.tsx
+│   ├── Experience.tsx
+│   ├── Recommendations.tsx
+│   └── Contact.tsx
+│
+├── App.tsx
+└── main.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The application follows a component-based architecture where individual sections and reusable UI components are separated to keep the codebase maintainable and scalable.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 💻 Getting Started
 
+### Prerequisites
+
+Make sure you have **Node.js** and **npm** installed.
+
+### Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/batoolfatima2135/My-Portfolio.git
 ```
+
+Navigate to the project directory:
+
+```bash
+cd My-Portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+The application will be available at the local URL provided by Vite, usually:
+
+```text
+http://localhost:5173
+```
+
+---
+
+## 📦 Production Build
+
+Create an optimized production build:
+
+```bash
+npm run build
+```
+
+Preview the production build locally:
+
+```bash
+npm run preview
+```
+
+The production files are generated in the `dist` directory.
+
+---
+
+## 🎯 Purpose
+
+This portfolio was created to present my journey as a **Software Engineer**, including my professional experience, technical skills, achievements, and projects.
+
+It also serves as an example of how I approach:
+
+* Modern frontend development
+* Component-based architecture
+* Responsive web design
+* Performance optimization
+* Animation and interaction design
+* Clean and maintainable code
+
+---
+
+## 🏆 Achievements
+
+The portfolio includes a dedicated section highlighting professional achievements, including:
+
+* **Talverse Value Victor Award — 2025**
+* **Talverse Future Leadership Program — 2025**
+* Engineering Department Representative
+
+---
+
+
+## 👩‍💻 About Me
+
+I'm **Batool Fatima Zaidi**, a Software Engineer with professional experience building modern, scalable, and high-performance web applications.
+
+My primary frontend technologies include **React, Next.js, TypeScript, JavaScript, and modern CSS**, with backend experience using **C#, ASP.NET, Node.js, and REST APIs**.
+
+I enjoy building applications that combine strong engineering principles with thoughtful user experiences.
+
+---
+
+## 📬 Contact
+
+I'm open to opportunities, collaborations, and interesting software engineering projects.
+
+* **Email:** [batoolfatima2135@gmail.com](mailto:batoolfatima2135@gmail.com)
+* **LinkedIn:** [Batool Fatima](https://www.linkedin.com/in/batoolfatima2135)
+* **GitHub:** [batoolfatima2135](https://github.com/batoolfatima2135)
+
+---
+
+## 📄 License
+
+This project is intended as a personal portfolio and showcase of my work.
