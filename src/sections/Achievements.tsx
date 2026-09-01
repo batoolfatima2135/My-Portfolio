@@ -5,6 +5,9 @@ import ScrollReveal from "@/components/ScrollReveal/ScrollReveal";
 import { Trophy } from "lucide-react";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import awardImage from "@/assets/award.jfif";
+import awardDetailImage from "@/assets/value-victor.jpeg";
+import futureLeadershipProgramImage from "@/assets/future-leadership-program.jpeg";
 
 export const Achievements: React.FC = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
@@ -67,11 +70,11 @@ export const Achievements: React.FC = () => {
                 <div className="rounded-2xl overflow-hidden h-100">
                   <button
                     type="button"
-                    onClick={() => handleImageClick("./award.jfif")}
+                    onClick={() => handleImageClick(awardImage)}
                     className="block w-full cursor-pointer h-full"
                   >
                     <img
-                      src="./award.jfif"
+                      src={awardImage}
                       alt="Award"
                       className="w-full h-full object-cover rounded-2xl"
                     />
@@ -81,11 +84,11 @@ export const Achievements: React.FC = () => {
                 <div className="rounded-2xl overflow-hidden h-100">
                   <button
                     type="button"
-                    onClick={() => handleImageClick("./value-victor.jpeg")}
+                    onClick={() => handleImageClick(awardDetailImage)}
                     className="block w-full cursor-pointer h-full"
                   >
                     <img
-                      src="./value-victor.jpeg"
+                      src={awardDetailImage}
                       alt="Value Victor Award"
                       className="w-full h-full object-cover rounded-2xl"
                     />
@@ -133,12 +136,12 @@ export const Achievements: React.FC = () => {
                   <button
                     type="button"
                     onClick={() =>
-                      handleImageClick("./future-leadership-program.jpeg")
+                      handleImageClick(futureLeadershipProgramImage)
                     }
                     className="block w-7/8 cursor-pointer mx-auto"
                   >
                     <img
-                      src="./future-leadership-program.jpeg"
+                      src={futureLeadershipProgramImage}
                       alt="Certificate"
                       className=" h-auto object-cover rounded-2xl"
                     />
