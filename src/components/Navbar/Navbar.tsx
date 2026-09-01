@@ -36,7 +36,7 @@ export default function Navbar() {
       <nav className="rounded-2xl border border-white/15 bg-white/5 px-5 py-3 backdrop-blur-3xl shadow-[0_8px_32px_rgba(0,0,0,0.25)]">
         <div className="flex items-center justify-between">
           <a
-            href="#"
+            href="/"
             className="text-lg font-bold tracking-wide text-white sm:text-xl"
           >
             Batool Fatima Zaidi
