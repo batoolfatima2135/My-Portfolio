@@ -131,7 +131,7 @@ export const Achievements: React.FC = () => {
                   {t("achievements.leadership-award-description")}
                 </ScrollReveal>
               </div>
-              <div className="grid grid-cols-1 gap-6 p-5 md:mt-10 sm:mt-5">
+              <div className="grid grid-cols-1 gap-6 p-5 mt-2">
                 <div className="rounded-2xl overflow-hidden w-11/12 max-w-4xl mx-auto">
                   <button
                     type="button"
